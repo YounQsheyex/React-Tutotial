@@ -1,0 +1,156 @@
+hReact is a JS library for building UIs
+Thrives on using Components
+
+create a react app (vite)
+create a folder
+
+npm create vite@latest
+., react, react, javaScript
+
+npm install
+npm run dev
+
+CLEAN UP
+1 css styles (app.css, index.css)
+2. clear our app,jsx
+APP.JSX (root component)
+Navbar
+Button
+Anchor
+
+Create a React Component
+function
+1. start with Uppercase e.g Button, Video
+2. return one sth (jsx element)
+
+const Navbar = ()=>{
+    return <div>
+    h1
+    p
+    </div>
+}
+
+react fragment <> </>
+
+JSX (html)
+1. every element must closed <br /> <img  src alt  />
+<hr></hr>
+2. class don't className do 
+3. label htmlFor
+
+Styling in React
+1. global css (app.css, index.css)
+2. local css 
+3. inline css style = {{color: 'red', fontFamily: 'cursive'}}
+4. external css library (tailwind)
+
+Working with Tailwind in REACT
+1. npm install tailwindcss @tailwindcss/vite
+2. adding the plugin to the vite,config.jsx
+3. added Import @tailwind.css index.css
+
+Objective
+1. create a react app using vite
+2. customize your app
+3. create components and nest them appropriately
+4. style your components
+5. working with images in react (local , images online)
+
+function Button ({bg, color}){
+return <button>sign Up</button>
+}
+<Button bg= 'red' color= 'white />
+<Button bg= 'black' color= 'white' />
+
+DYnamic values (javaScript) {}
+
+PROPS - DATA POINT PASSED FROM PARENT TO CHILD COMPONENT
+
+const Hero = ()=>{
+    const age = 76
+    return <div>
+    h1
+    <Button age = {age} job= {'programmer'} />
+    </div>
+}
+props object {age: 76, job: 'programmer'}
+I Know You will Not read it ooooooo
+const Button = ({age, job})=>{
+    const {age, job} = props
+    return <button>sign up</button>
+}
+
+Outputting Lists (array) map
+const names = ['Adewale', 'Khalid', 'John'] 
+key = {unique to element in the array}
+<div>
+{
+    names.map((name, index)=>{
+        return <p key ={index}>{name}</p>
+    })
+}
+</div>
+
+ const staff = [
+    {
+      id: 1,
+      image:
+        "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YXZhdGFyfGVufDB8fDB8fHww",
+      name: "John Doe",
+      role: "Chief Operating Officer",
+    },
+    {
+      id: 2,
+      image:
+        "https://images.unsplash.com/photo-1599566150163-29194dcaad36?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8YXZhdGFyfGVufDB8fDB8fHww",
+      name: "Peter Pan",
+      role: "Head Of Finance",
+    },
+    {
+      id: 3,
+      image:
+        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YXZhdGFyfGVufDB8fDB8fHww",
+      name: "Jane Doe",
+      role: "Head Of Marketing",
+    },
+    {
+      id: 4,
+      image:
+        "https://images.unsplash.com/photo-1633332755192-727a05c4013d?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8YXZhdGFyfGVufDB8fDB8fHww",
+      name: "Liu Kang",
+      role: "Creative Director",
+    },
+    {
+      id: 5,
+      image:
+        "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8YXZhdGFyfGVufDB8fDB8fHww",
+      name: "Sonya Blade",
+      role: "Admin Officer",
+    },
+  ];
+
+
+  {
+    staff.map((member)=>{
+        return <SingleMember  key={member.id} image={member.image} role= {member.role} />
+    })
+  }
+
+  const SingleMember = ({image, role})=>{
+    return <div>
+img
+    </div>
+  }
+
+
+  //
+  Last Viewed Section
+
+  create a component called LastViewed
+  const lastViewedroducts = [
+    {id, image, price, title}
+  ]
+  use the MyStoreSingleroduct component
+
+  PROPS CHILDREN 
+  Passing jsx element 

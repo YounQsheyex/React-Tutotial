@@ -11,11 +11,16 @@ import ComplexList from "./components/ComplexList";
 import MyStore from "./components/MyStore";
 import MyStoreSingleProduct from "./components/MyStoreSingleProduct";
 import LastViedProducts from "./components/LastViedProducts";
+import PropsChildren from "./components/PropsChildren";
+import EventHandling from "./components/EventHandling";
+import ConditionalRendering from "./components/ConditionalRendering";
+import SimpleState from "./components/SimpleState";
+import User from "./components/User";
 function App() {
   return (
     <>
-      <MyStore />
-      <LastViedProducts />
+      <SimpleState />
+      <User />
     </>
   );
 }
