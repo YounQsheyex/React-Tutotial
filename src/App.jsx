@@ -16,11 +16,16 @@ import EventHandling from "./components/EventHandling";
 import ConditionalRendering from "./components/ConditionalRendering";
 import SimpleState from "./components/SimpleState";
 import User from "./components/User";
+import ComplexState from "./components/ComplexState";
+import ComplexStateArrays from "./components/ComplexStateArrays";
+import ExampleArray from "./components/ExampleArray";
+import SimpleEffect from "./components/SimpleEffect";
+import FetchData from "./components/FetchData";
 function App() {
   return (
     <>
-      <SimpleState />
-      <User />
+      
+      <FetchData />
     </>
   );
 }
