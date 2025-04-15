@@ -1,10 +1,12 @@
 import React from "react";
 import { useEffect, useState } from "react";
+import { FadeLoader } from "react-spinners";
 
 const url = "https://dummyjson.com/products";
 
 const FetchData = () => {
   const [products, setProducts] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
     const getProducts = async () => {
       const res = await fetch(url);
@@ -14,6 +16,13 @@ const FetchData = () => {
     };
     getProducts();
   }, []);
+  if (isLoading) {
+    return (
+      <div className="flex items-center justify-center h-60">
+        <FadeLoader  color="#ff0000"/>
+      </div>
+    );
+  }
   return (
     <div className="max-w-[1200px] mx-auto p-10">
       <h1>List of Products</h1>

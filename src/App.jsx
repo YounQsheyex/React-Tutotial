@@ -21,11 +21,14 @@ import ComplexStateArrays from "./components/ComplexStateArrays";
 import ExampleArray from "./components/ExampleArray";
 import SimpleEffect from "./components/SimpleEffect";
 import FetchData from "./components/FetchData";
+import FetchUsers from "./components/FetchUsers";
+import GetAuthors from "./components/GetAuthors";
+import Receipe from "./components/Receipe";
+import SimpleForm from "./components/SimpleForm";
 function App() {
   return (
     <>
-      
-      <FetchData />
+      <SimpleForm />
     </>
   );
 }
