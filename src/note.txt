@@ -154,3 +154,7 @@ img
 
   PROPS CHILDREN 
   Passing jsx element 
+
+  react router dom
+  spa- single page application to navigate between different views without refreshing the page.
+  Mpa- multiple page application, where each view is a separate HTML page that requires a full reload.
