@@ -25,10 +25,15 @@ import FetchUsers from "./components/FetchUsers";
 import GetAuthors from "./components/GetAuthors";
 import Receipe from "./components/Receipe";
 import SimpleForm from "./components/SimpleForm";
+import MultipleForm from "./components/MultipleForm";
+import OtherInputs from "./components/OtherInputs";
+import AxiosExample from "./components/AxiosExample";
+import TestDaisyum from "./components/TestDaisyum";
+import ReactHookForm from "./components/ReactHookForm";
 function App() {
   return (
     <>
-      <SimpleForm />
+      <ReactHookForm />
     </>
   );
 }
