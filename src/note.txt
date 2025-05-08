@@ -158,3 +158,11 @@ img
   react router dom
   spa- single page application to navigate between different views without refreshing the page.
   Mpa- multiple page application, where each view is a separate HTML page that requires a full reload.
+  global state
+  context api
+  prop drilling
+
+
+  react optimiztion 
+  1. code splitting 
+  2. Suspence Component and lazy function

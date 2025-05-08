@@ -14,6 +14,7 @@ import NotFound from "./pages/NotFound";
 import Login from "./pages/Login";
 import Timeline from "./pages/Timeline";
 import SingleTweet from "./pages/SingleTweet";
+import DashboradLayout from "./pages/DashboradLayout";
 
 function App() {
   return (
@@ -32,6 +33,13 @@ function App() {
               <Route path="/login" element={<Login />}></Route>
               <Route path="/timeline" element={<Timeline />}></Route>
               <Route path="/timeline/:id" element={<SingleTweet />}></Route>
+              <Route path="/dashboard" element={<DashboradLayout />}>
+              {/* children will be here */}
+              <Route index element={<h1>Home DashBoard</h1>}/>
+              <Route path="trash" element={<h1>Trash Side</h1>}/>
+              <Route path="spam" element={<h1>Spam Side</h1>}/>
+              </Route>
+              
               <Route path="*" element={<NotFound />}></Route>
             </>
           </Routes>

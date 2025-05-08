@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Timeline = () => {
   return (
     <div className="py-7">
-      <section className="flex gap-3">
+      <section className="flex gap-3 justify-center">
         <div className="w-[300px] border border-secondary p-3">
           <h1 className="text-3xl font-bold">Trending Topics</h1>
           <ol>

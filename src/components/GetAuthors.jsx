@@ -1,9 +1,11 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import { FadeLoader } from "react-spinners";
-
+import { useAppContext } from "../hooks/useAppContext";
 const url = "https://example-data.draftbit.com/authors?_limit=10";
 const GetAuthors = () => {
+  const { value1, value2 } = useAppContext();
+
   const [authors, setAuthors] = useState([]);
   const [loading, setIsLoading] = useState(true);
   useEffect(() => {
@@ -25,6 +27,9 @@ const GetAuthors = () => {
   }
   return (
     <div className="max-w-[1240px] mx-auto p-10">
+      <h1 className="font-extrabold text-center text-6xl mb-10">
+        {value1} {value2}
+      </h1>
       <h1 className="font-extrabold text-center text-6xl mb-10">Authors</h1>
       <section className="flex items-center flex-wrap gap-4">
         {authors.map((author, index) => {

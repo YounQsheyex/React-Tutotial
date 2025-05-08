@@ -1,5 +1,6 @@
 import React from "react";
 import Auth from "../components/GetAuthors";
+import { useAppContext } from "../hooks/useAppContext";
 
 const Store = () => {
   return (
